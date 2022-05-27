@@ -1,0 +1,297 @@
+/* font Inter */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter-400.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/inter-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/inter-900.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d3440;
+  background: #feafc3;
+}
+
+/* Pages */
+/* Header*/
+
+.page-header {
+  line-height: 20px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.header-button-item {
+  list-style: none;
+}
+
+.header-button {
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.header-button-tel {
+  font-weight: 700;
+}
+
+/* Main */
+/* Slider */
+
+.slider-item {
+  list-style: none;
+}
+
+.slider-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.social-item {
+  list-style: none;
+}
+
+/* Offer */
+
+.section-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.offer-for-free {
+  background: #ff7799;
+  border-radius: 16px;
+}
+
+.offer-for-free-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.offer-text {
+  line-height: 22px;
+}
+
+/* Popular */
+
+.product-card {
+  list-style: none;
+  background: #fcfcfc;
+  border-radius: 8px;
+}
+
+.product-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-card-text {
+  line-height: 22px;
+  color: #565c66;
+  text-align: center;
+}
+
+.product-card-price {
+  font-weight: 700;
+}
+
+/* Info */
+
+.info {
+  background: #fff;
+  border-radius: 16px;
+}
+
+.info-item {
+  list-style: none;
+  line-height: 22px;
+  color: #565c66;
+}
+
+/* Newsbreak */
+
+.news {
+  background: #fff url('/images/backgrounds/news-bg.jpg') no-repeat;
+  border-radius: 16px;
+}
+
+.news-text {
+  line-height: 20px;
+  color: #565c66;
+}
+
+.news-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.subs {
+  background: #fff;
+  border-radius: 16px;
+}
+
+.text {
+  line-height: 22px;
+  color: #565c66;
+}
+
+.submit-button {
+  text-decoration: none;
+}
+
+/* Delivery */
+
+.delivery {
+  background: #fcfcfc url('/images/backgrounds/delivery-bg.jpg') no-repeat;
+  border-radius: 16px;
+}
+
+/* Contacts */
+
+.contacts {
+  background: #fcfcfc url('/images/backgrounds/contacts-bg.jpg') no-repeat;
+  border-radius: 16px;
+}
+
+.contacts-container {
+  background: #fcfcfc;
+  border-radius: 8px;
+}
+
+.contacts-address {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-tel {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts-sign {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+/* Footer */
+
+.footer-menu-item {
+  list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-brand-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-brand-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Catalog*/
+/* Breadcrumbs */
+
+.breadcrumbs-item {
+  list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+/* Catalog-products */
+
+.catalog-filter-group {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-item {
+  list-style: none;
+}
+
+.inner-button {
+  font-weight: 700;
+}
+
+/* Pagination */
+
+.pagination-item {
+  list-style: none;
+}
+
+.pagination-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: #fcfcfc;
+  border-radius: 76px;
+}
