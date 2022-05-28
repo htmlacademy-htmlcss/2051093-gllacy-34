@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
@@ -14,19 +15,19 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="catalog.html" class="header-button-text">Каталог</a>
+          <a href="catalog.html" class="header-button header-button-text">Каталог</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="header-button-text">Доставка и оплата</a>
+          <a href="#" class="header-button header-button-text">Доставка и оплата</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="header-button-text">О компании</a>
+          <a href="#" class="header-button header-button-text">О компании</a>
         </li>
       </ul>
     </nav>
     <ul class="header-button-list">
       <li class="header-button-item">
-        <a href="#" class="header-button-text">+7 800 555-86-28</a>
+        <a href="#" class="header-button header-button-tel">+7 800 555-86-28</a>
       </li>
       <li class="header-button-item">
         <a href="#" class="header-button header-button-search">
@@ -39,7 +40,7 @@
         </a>
       </li>
       <li class="header-button-item">
-        <a href="#" class="header-button">
+        <a href="#" class="header-button header-button-cart">
           <span class="visually-hidden">Корзина</span>
         </a>
       </li>
@@ -49,7 +50,7 @@
   <main class="main-index">
     <section class="slider">
       <ul class="slider-list">
-        <li class="slider-item-1">
+        <li class="slider-item slider-item-1">
           <div class="slider-item-info">
             <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
             <p class="slider-text">
@@ -70,7 +71,7 @@
           <img src="images/slider/icecream-3.png" width="66" height="150" alt="Пломбир с маршмеллоу">
         </li>
 
-        <li class="slider-item-2 visually-hidden">
+        <li class="slider-item slider-item-2 visually-hidden">
           <div class="slider-item-info">
             <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
             <p class="slider-text">
@@ -91,7 +92,7 @@
           <img src="images/slider/icecream-1.png" width="66" height="150" alt="Клубничный пломбир">
         </li>
 
-        <li class="slider-item-3 visually-hidden">
+        <li class="slider-item slider-item-3 visually-hidden">
           <div class="slider-item-info">
             <h2 class="slider-title">Карамельный пломбир с маршмеллоу</h2>
             <p class="slider-text">
@@ -142,8 +143,8 @@
             <span class="visually-hidden">Вконтаке</span>
           </a>
         </li>
-        <li class="slider-social-item social-item" target="_blank">
-          <a href="https://www.youtube.com/user/htmlacademyru">
+        <li class="slider-social-item social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
@@ -154,12 +155,12 @@
       <h1 class="visually-hidden">Магазин мороженного "GllacyShop"</h1>
       <h2 class="offer-title section-title">Заказывайте мороженое и получайте подарки!</h2>
 
-      <div class="offer-for-free">
+      <div class="offer-for-free raspberry">
         <h3 class="offer-for-free-title">Малинка даром!</h3>
         <p class="offer-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <a class="button" href="#">Хочу подарок</a>
       </div>
-      <div class="offer-for-free">
+      <div class="offer-for-free marshmallow">
         <h3 class="offer-for-free-title">Маршмеллоу даром!</h3>
         <p class="offer-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
         <a class="button" href="#">Хочу подарок</a>
@@ -173,7 +174,7 @@
         <li class="product-card">
           <a href="#" class="product-card-link">
             <img src="/images/catalog-items/raspberry.jpg" width="168" height="168" alt="Малиновое мороженое">
-            <h3 class="product-card-title">Малинка</>
+            <h3 class="product-card-title">Малинка</h3>
           </a>
           <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
           <div class="product-card-container">
@@ -253,11 +254,11 @@
     <section class="newsbreak">
       <aside class="news">
         <p class="news-text">Новое в нашем блоге</p>
-        <h3 class="news-title title">10 способов сервировки фруктовых щербетов к столу</h3>
+        <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
       </aside>
 
       <aside class="subs">
-        <p class="subs-text">
+        <p class="subs-text text">
           Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form action="https://echo.htmlacademy.ru/" class="subs-form" method="post">
@@ -269,8 +270,7 @@
 
     <section class="delivery">
       <h2 class="delivery-title section-title">Доставка любимого мороженого на дом</h2>
-      <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-
+      <p class="delivery-text text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <label for="delivery-date">Дата</label>
@@ -284,12 +284,14 @@
     </section>
 
     <section class="contacts">
-      <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
-      <p class="contacts-adress">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <p class="contacts-text">Для заказов по телефону:</p>
-      <a class="contacts-tel" href="#">+7 (812) 812-12-12</a>
-      <p class="contacts-sign">(с 10 до 20 ежедневно)</p>
-      <a href="#" class="submit-button">Форма обратной связи</a>
+      <div class="contacts-container">
+        <p class="contacts-text text">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <p class="contacts-text text">Для заказов по телефону:</p>
+        <a class="contacts-tel" href="#">+7 (812) 812-12-12</a>
+        <p class="contacts-sign">(с 10 до 20 ежедневно)</p>
+        <a href="#" class="submit-button">Форма обратной связи</a>
+      </div>
     </section>
   </main>
 
@@ -314,16 +316,16 @@
 
     <ul class="footer-menu-list">
       <li class="footer-menu-item">
-        <a href="#">Для поставщиков</a>
+        <a href="#" class="footer-menu-link">Для поставщиков</a>
       </li>
       <li class="footer-menu-item">
-        <a href="#">О производстве</a>
+        <a href="#" class="footer-menu-link">О производстве</a>
       </li>
       <li class="footer-menu-item">
-        <a href="#">Наши документы</a>
+        <a href="#" class="footer-menu-link">Наши документы</a>
       </li>
       <li class="footer-menu-item">
-        <a href="#">Экологические стандарты</a>
+        <a href="#" class="footer-menu-link">Экологические стандарты</a>
       </li>
     </ul>
 
