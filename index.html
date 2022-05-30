@@ -47,8 +47,8 @@
     </ul>
   </header>
 
-  <main class="main-index">
-    <section class="slider">
+  <main class="main-container">
+    <section class="slider section">
       <ul class="slider-list">
         <li class="slider-item slider-item-1">
           <div class="slider-item-info">
@@ -114,60 +114,63 @@
         </li>
       </ul>
 
-      <ul class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">1 фото</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">2 фото</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">3 фото</span>
-          </button>
-        </li>
-      </ul>
+      <div class="section-container">
+        <ul class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ul>
 
-      <ul class="slider-social-list">
-        <li class="slider-social-item social-item">
-          <a href="https://t.me/htmlacademy" target="_blank">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="slider-social-item social-item">
-          <a href="https://vk.com/htmlacademy" target="_blank">
-            <span class="visually-hidden">Вконтаке</span>
-          </a>
-        </li>
-        <li class="slider-social-item social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Вконтаке</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="offer">
+    <section class="offer section">
       <h1 class="visually-hidden">Магазин мороженного "GllacyShop"</h1>
       <h2 class="offer-title section-title">Заказывайте мороженое и получайте подарки!</h2>
-
-      <div class="offer-for-free raspberry">
-        <h3 class="offer-for-free-title">Малинка даром!</h3>
-        <p class="offer-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="button" href="#">Хочу подарок</a>
-      </div>
-      <div class="offer-for-free marshmallow">
-        <h3 class="offer-for-free-title">Маршмеллоу даром!</h3>
-        <p class="offer-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-        <a class="button" href="#">Хочу подарок</a>
+      <div class="offer-container">
+        <div class="offer-for-free raspberry">
+          <h3 class="offer-for-free-title">Малинка даром!</h3>
+          <p class="offer-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button" href="#">Хочу подарок</a>
+        </div>
+        <div class="offer-for-free marshmallow">
+          <h3 class="offer-for-free-title">Маршмеллоу даром!</h3>
+          <p class="offer-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <a class="button" href="#">Хочу подарок</a>
+        </div>
       </div>
     </section>
 
-    <section class="popular">
+    <section class="popular section">
       <h2 class="popular-title section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
 
       <ul class="product-list">
@@ -229,7 +232,7 @@
       </ul>
     </section>
 
-    <section class="info">
+    <section class="info section">
       <h2 class="info-title section-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
 
       <ul class="info-list">
@@ -251,7 +254,7 @@
       </ul>
     </section>
 
-    <section class="newsbreak">
+    <section class="newsbreak section">
       <aside class="news">
         <p class="news-text">Новое в нашем блоге</p>
         <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
@@ -268,9 +271,11 @@
       </aside>
     </section>
 
-    <section class="delivery">
-      <h2 class="delivery-title section-title">Доставка любимого мороженого на дом</h2>
-      <p class="delivery-text text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+    <section class="delivery section">
+      <div class="delivery-container">
+        <h2 class="delivery-title section-title">Доставка любимого мороженого на дом</h2>
+        <p class="delivery-text text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+      </div>
       <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <label for="delivery-date">Дата</label>
@@ -296,18 +301,18 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="footer-social-list">
-      <li class="footer-social-item social-item">
+    <ul class="social-list">
+      <li class="social-item">
         <a href="https://t.me/htmlacademy" target="_blank">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
-      <li class="footer-social-item social-item">
+      <li class="social-item">
         <a href="https://vk.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
-      <li class="footer-social-item social-item">
+      <li class="social-item">
         <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
           <span class="visually-hidden">Ютуб</span>
         </a>
