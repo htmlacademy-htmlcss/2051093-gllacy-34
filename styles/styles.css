@@ -46,6 +46,15 @@ body {
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -68,19 +77,27 @@ body {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.nav-item {
+  padding: 16px;
+}
+
 .header-button-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.header-button-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .header-button {
@@ -119,12 +136,16 @@ body {
 }
 
 .slider-title {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
 }
 
 .slider-text {
+  margin: 0;
+  margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -162,6 +183,7 @@ body {
 /* Offer */
 
 .section-title {
+  margin: 0;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -184,20 +206,25 @@ body {
 }
 
 .offer-for-free-title {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .offer-text {
+  margin: 0;
+  margin-bottom: 28px;
   width: 328px;
   line-height: 22px;
+  margin-right: 170px;
 }
 
 /* Popular */
 
 .popular-title {
-  margin-bottom: 16px;
+  margin-bottom: 56px;
 }
 
 .product-list {
@@ -207,7 +234,7 @@ body {
 }
 
 .product-card {
-  margin-top: 40px;
+  padding: 0 40px 24px;
   background: #fcfcfc;
   border-radius: 8px;
 }
@@ -220,12 +247,16 @@ body {
 }
 
 .product-card-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .product-card-text {
+  margin: 0;
+  margin-bottom: 16px;
   line-height: 22px;
   color: #565c66;
   text-align: center;
@@ -233,6 +264,11 @@ body {
 
 .product-card-price {
   font-weight: 700;
+}
+
+.product-card-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Info */
@@ -243,10 +279,23 @@ body {
   border-radius: 16px;
 }
 
-.info-item {
+.info-title{
+  margin-bottom: 56px;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.info-item {
   line-height: 22px;
   color: #565c66;
+}
+
+.info-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 /* Newsbreak */
@@ -257,17 +306,22 @@ body {
 }
 
 .news {
+  margin-right: 30px;
   padding: 32px;
   background: #fff url('/images/backgrounds/news-bg.jpg') no-repeat;
   border-radius: 16px;
 }
 
 .news-text {
+  margin: 0;
+  margin-bottom: 12px;
   line-height: 20px;
   color: #565c66;
 }
 
 .news-title {
+  margin: 0;
+  margin-right: 203px;
   width: 303px;
   font-size: 24px;
   line-height: 32px;
@@ -281,8 +335,13 @@ body {
 }
 
 .text {
+  margin: 0;
   line-height: 22px;
   color: #565c66;
+}
+
+.subs-text {
+  margin-bottom: 42px;
 }
 
 .submit-button {
@@ -302,14 +361,20 @@ body {
 }
 
 .delivery-title {
+  margin-bottom: 24px;
   text-align: left;
 }
 
 .delivery-form {
-  width: 500px;
+  margin-left: 135px;
+  min-width: 500px;
   padding: 40px;
   background: #fcfcfc;
   border-radius: 8px;
+}
+
+.form-text {
+  margin: 0 40px 32px 0;
 }
 
 /* Contacts */
@@ -321,12 +386,19 @@ body {
 }
 
 .contacts-container {
+  margin-right: 763px;
   padding: 40px;
   background: #fcfcfc;
   border-radius: 8px;
 }
 
+.contacts-text {
+  margin-bottom: 12px;
+}
+
 .contacts-address {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -341,6 +413,7 @@ body {
 }
 
 .contacts-sign {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #565c66;
@@ -385,20 +458,27 @@ body {
 /* Breadcrumbs */
 
 .breadcrumbs {
+  display: flex;
+  margin: 32px 0 16px;
+  padding: 0;
   list-style: none;
 }
 
 .breadcrumbs-item {
+  margin-right: 28px;
   font-size: 14px;
   line-height: 20px;
 }
 
 .breadcrumbs-link {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -412,6 +492,8 @@ body {
 }
 
 .catalog-filter-group {
+  margin-right: 24px;
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -421,6 +503,10 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .inner-button {
