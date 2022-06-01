@@ -85,7 +85,6 @@ body {
 }
 
 .nav-item {
-  display: block;
   padding: 16px;
 }
 
@@ -98,7 +97,6 @@ body {
 }
 
 .header-button-item:not(:last-child) {
-  display: block;
   margin-right: 16px;
 }
 
