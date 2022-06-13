@@ -475,12 +475,11 @@ img {
   list-style: none;
 }
 
-.slider-inner-list {
+.slider-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 70px;
-  list-style: none;
 }
 
 .slider-item-info {
@@ -539,12 +538,6 @@ img {
   background: #e7e7e7;
   border: 4px solid rgba(252, 252, 252, 0.4);
 }
-
-/*  положение кнопки при длительном отклике
-.button:default {
-  padding-right: 56px;
-  background: #fcfcfc url('../images/icons/spinner.svg') no-repeat 80% 50% ;
-} */
 
 .slider-item-image {
   position: relative;
@@ -913,7 +906,6 @@ img {
   background: url('../images/icons/thermometer.svg') no-repeat center;
 }
 
-
 /* Newsbreak */
 
 .newsbreak {
@@ -1002,12 +994,6 @@ img {
   background: #b9b9b9;
   border: 4px solid rgba(185, 185, 185, 0.3);
 }
-
-/*  положение кнопки при длительном отклике
-.submit-button:default{
-  padding-right: 56px;
-  background: #ff2f64 url('../images/icons/spinner-white.svg') no-repeat 80% 50% ;
-} */
 
 /* Delivery */
 
@@ -1253,6 +1239,17 @@ img {
   border-radius: 8px;
 }
 
+.close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background: url('../images/icons/cross.svg') no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
 .modal-checkback {
   width: 570px;
 }
@@ -1418,6 +1415,7 @@ img {
 
 .range-toggle {
   position: absolute;
+  display: block;
   width: 16px;
   height: 16px;
   padding: 0;
