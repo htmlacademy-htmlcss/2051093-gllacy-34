@@ -16,6 +16,26 @@
       <ul class="nav-list">
         <li class="nav-item">
           <a href="catalog.html" class="header-button-text header-button-text-current">Каталог</a>
+          <ul class="popover-list-submenu popover popover-open">
+            <li class="popover-item-submenu">
+              <a href="#" class="submenu-link">
+                <span>Новинки</span>
+              </a>
+            </li>
+            <li class="popover-item-submenu-new">
+            <li class="popover-item-submenu">
+              <a href="#" class="submenu-link">Сливочное</a>
+            </li>
+            <li class="popover-item-submenu">
+              <a href="#" class="submenu-link">Щербеты</a>
+            </li>
+            <li class="popover-item-submenu">
+              <a href="#" class="submenu-link">Фруктовый лед</a>
+            </li>
+            <li class="popover-item-submenu">
+              <a href="#" class="submenu-link">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="#" class="header-button-text">Доставка и оплата</a>
@@ -30,15 +50,62 @@
         <a href="#" class="header-button-text header-button-tel">+7 800 555-86-28</a>
       </li>
       <li class="header-button-item">
-        <a href="#" class="header-button header-button-search">
+        <a href="#" class="header-button header-button-search header-button-search-current">
           <span class="visually-hidden">Поиск</span>
         </a>
+        <div class="popover popover-search">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="search" class="visually-hidden"></label>
+            <input type="text" class="form-input" id="search" name="search" placeholder="|Поиск по сайту">
+            <button class="search-delete-button delete-button" type="reset"></button>
+          </form>
+        </div>
       </li>
       <li class="header-button-item">
-        <a href="#" class="header-button header-button-login">Вход</a>
+        <a href="#" class="header-button header-button-login header-button-login-current">Вход</a>
+        <div class="popover popover-login popover-open">
+          <h2 class="content-title">Личный кабинет</h2>
+          <form action="https://echo.htmlacademy.ru/" class="popover-form" method="post">
+            <label for="login-email" class="visually-hidden"></label>
+            <input class="login-form-input form-input" type="text" name="login-email" id="login-email" value="email@example.com">
+            <label for="login-password" class="visually-hidden"></label>
+            <input class="login-form-input form-input" type="password" name="login-password" id="login-password" value="******">
+            <button class="submit-button button login-form-button">Войти</button>
+            <a href="#" class="form-link">Забыли пароль?</a>
+            <a href="#" class="form-link">Регистрация</a>
+          </form>
+        </div>
       </li>
       <li class="header-button-item">
-        <a href="#" class="header-button header-button-cart">2 товара</a>
+        <a href="#" class="header-button header-button-cart header-button-cart-current">2 товара</a>
+        <div class="popover popover-cart">
+          <h2 class="content-title">Корзина</h2>
+          <ul class="cart-list">
+            <li class="cart-item">
+              <span class="cart-item-tilte cart-item-bold">Малинка</span>
+              <span class="cart-item-info">1 кг х 310 ₽</span>
+              <span class="cart-item-price cart-item-bold">310 ₽</span>
+              <button class="cart-delete-button delete-button">
+                <span class="visually-hidden">Удалить из корзины</span>
+              </button>
+            </li>
+            <li class="cart-item">
+              <span class="cart-item-tilte cart-item-bold">Бабл-гам</span>
+              <span class="cart-item-info">1,5 кг х 320 ₽</span>
+              <span class="cart-item-price cart-item-bold">480 ₽</span>
+              <button class="cart-delete-button delete-button">
+                <span class="visually-hidden">Удалить из корзины</span>
+              </button>
+            </li>
+          </ul>
+          <div class="cart-container">
+            <button class="cart-button button submit-button">Оформить заказ</button>
+            <p class="cart-item-sum cart-item-bold">Итого: 790 ₽</p>
+          </div>
+        </div>
+        <div class="popover popover-cart-empty">
+          <h2 class="popover-title">Ваша корзина пока пуста</h2>
+        </div>
       </li>
     </ul>
   </header>
@@ -49,7 +116,7 @@
         <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link breadcrumbs-link-current href="catalog.html">Каталог</a>
+        <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html">Каталог</a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Сливочное</a>
@@ -68,8 +135,26 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-
+          <legend class="catalog-filter-title">Цена:
+              <label class="catalog-filter-label">
+                <input class="range-input" type="text" value="100" name="min-price"> ₽ -
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="text" value="500" name="max-price"> ₽
+              </label>
+          </legend>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 40px; width: 56px">
+                <span class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </span>
+                <span class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </span>
+              </div>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="catalog-filter-group">
@@ -77,26 +162,30 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="radio" name="fattiness" value="0%">
-                0%
+                <input class="filler-input visually-hidden" type="radio" name="fattiness" value="0%">
+                <span class="filler-mark"></span>
+                <span class="filler-label">0%</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="radio" name="fattiness" value="to-10%">
-                до 10%
+                <input class="filler-input visually-hidden" type="radio" name="fattiness" value="to-10%">
+                <span class="filler-mark"></span>
+                <span class="filler-label">до 10%</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="radio" name="fattiness" value="to-30%">
-                до 30%
+                <input class="filler-input visually-hidden" type="radio" name="fattiness" value="to-30%" disabled checked>
+                <span class="filler-mark"></span>
+                <span class="filler-label">до 30%</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="radio" name="fattiness" value="over-30%">
-                выше 30%
+                <input class="filler-input visually-hidden" type="radio" name="fattiness" value="over-30%">
+                <span class="filler-mark"></span>
+                <span class="filler-label">выше 30%</span>
               </label>
             </li>
           </ul>
@@ -107,32 +196,37 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="checkbox" name="choko" checked>
-                шоколадные
+                <input class="filler-input visually-hidden" type="checkbox" name="choko" checked>
+                <span class="filler-mark"></span>
+                <span class="filler-label">шоколадные</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="checkbox" name="sugar-top" checked>
-                сахарные посыпки
+                <input class="filler-input visually-hidden" type="checkbox" name="sugar-top" checked>
+                <span class="filler-mark"></span>
+                <span class="filler-label">сахарные посыпки</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="checkbox" name="fruits">
-                фрукты
+                <input class="filler-input visually-hidden" type="checkbox" name="fruits">
+                <span class="filler-mark"></span>
+                <span class="filler-label">фрукты</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="checkbox" name="syrup">
-                сиропы
+                <input class="filler-input visually-hidden" type="checkbox" name="syrup">
+                <span class="filler-mark"></span>
+                <span class="filler-label">сиропы</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="filler">
-                <input class="filler-input" type="checkbox" name="jam">
-                джемы
+                <input class="filler-input visually-hidden" type="checkbox" name="jam">
+                <span class="filler-mark"></span>
+                <span class="filler-label">джемы</span>
               </label>
             </li>
           </ul>
