@@ -18,26 +18,28 @@
       <ul class="nav-list">
         <li class="nav-item">
           <a href="catalog.html" class="header-button-text">Каталог</a>
-          <ul class="popover-list-submenu popover">
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">
-                <span>Новинки</span>
-              </a>
-            </li>
-            <li class="popover-item-submenu-new">
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Сливочное</a>
-            </li>
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Щербеты</a>
-            </li>
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Фруктовый лед</a>
-            </li>
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Мелорин</a>
-            </li>
-          </ul>
+          <div class="popover-container popover-container-submenu">
+            <ul class="popover-list-submenu popover">
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">
+                  <span>Новинки</span>
+                </a>
+              </li>
+              <li class="popover-item-submenu-new">
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Сливочное</a>
+              </li>
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Щербеты</a>
+              </li>
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Фруктовый лед</a>
+              </li>
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Мелорин</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <a href="#" class="header-button-text">Доставка и оплата</a>
@@ -55,58 +57,66 @@
         <a href="#" class="header-button header-button-search">
           <span class="visually-hidden">Поиск</span>
         </a>
-        <div class="popover popover-search">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label for="search" class="visually-hidden"></label>
-            <input type="text" class="form-input" id="search" name="search" placeholder="|Поиск по сайту">
-            <button class="search-delete-button delete-button" type="reset"></button>
-          </form>
+        <div class="popover-container">
+          <div class="popover popover-search">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search" class="visually-hidden"></label>
+              <input type="text" class="form-input" id="search" name="search" placeholder="|Поиск по сайту">
+              <button class="search-delete-button delete-button" type="reset"></button>
+            </form>
+          </div>
         </div>
       </li>
       <li class="header-button-item">
         <a href="#" class="header-button header-button-login">Вход</a>
-        <div class="popover popover-login">
-          <h2 class="content-title">Личный кабинет</h2>
-          <form action="https://echo.htmlacademy.ru/" class="popover-form" method="post">
-            <label for="login-email" class="visually-hidden"></label>
-            <input class="login-form-input form-input" type="text" name="login-email" id="login-email" value="email@example.com">
-            <label for="login-password" class="visually-hidden"></label>
-            <input class="login-form-input form-input" type="password" name="login-password" id="login-password" value="******">
-            <button class="submit-button button login-form-button">Войти</button>
-            <a href="#" class="form-link">Забыли пароль?</a>
-            <a href="#" class="form-link">Регистрация</a>
-          </form>
+        <div class="popover-container">
+          <div class="popover popover-login">
+            <h2 class="content-title">Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru/" class="popover-form" method="post">
+              <label for="login-email" class="visually-hidden"></label>
+              <input class="login-form-input form-input" type="text" name="login-email" id="login-email" value="email@example.com">
+              <label for="login-password" class="visually-hidden"></label>
+              <input class="login-form-input form-input" type="password" name="login-password" id="login-password" value="******">
+              <button class="submit-button button login-form-button">Войти</button>
+              <a href="#" class="form-link">Забыли пароль?</a>
+              <a href="#" class="form-link">Регистрация</a>
+            </form>
+          </div>
         </div>
       </li>
       <li class="header-button-item">
         <a href="#" class="header-button header-button-cart">2 товара</a>
-        <div class="popover popover-cart">
-          <h2 class="content-title">Корзина</h2>
-          <ul class="cart-list">
-            <li class="cart-item">
-              <span class="cart-item-tilte cart-item-bold">Малинка</span>
-              <span class="cart-item-info">1 кг х 310 ₽</span>
-              <span class="cart-item-price cart-item-bold">310 ₽</span>
-              <button class="cart-delete-button delete-button">
-                <span class="visually-hidden">Удалить из корзины</span>
-              </button>
-            </li>
-            <li class="cart-item">
-              <span class="cart-item-tilte cart-item-bold">Бабл-гам</span>
-              <span class="cart-item-info">1,5 кг х 320 ₽</span>
-              <span class="cart-item-price cart-item-bold">480 ₽</span>
-              <button class="cart-delete-button delete-button">
-                <span class="visually-hidden">Удалить из корзины</span>
-              </button>
-            </li>
-          </ul>
-          <div class="cart-container">
-            <button class="cart-button button submit-button">Оформить заказ</button>
-            <p class="cart-item-sum cart-item-bold">Итого: 790 ₽</p>
+        <div class="popover-container">
+          <div class="popover popover-cart">
+            <h2 class="content-title">Корзина</h2>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <span class="cart-item-tilte cart-item-bold">Малинка</span>
+                <span class="cart-item-info">1 кг х 310 ₽</span>
+                <span class="cart-item-price cart-item-bold">310 ₽</span>
+                <button class="cart-delete-button delete-button" type="reset">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <span class="cart-item-tilte cart-item-bold">Бабл-гам</span>
+                <span class="cart-item-info">1,5 кг х 320 ₽</span>
+                <span class="cart-item-price cart-item-bold">480 ₽</span>
+                <button class="cart-delete-button delete-button" type="reset">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart-container">
+              <button class="cart-button button submit-button">Оформить заказ</button>
+              <p class="cart-item-sum cart-item-bold">Итого: 790 ₽</p>
+            </div>
           </div>
         </div>
-        <div class="popover popover-cart-empty">
-          <h2 class="popover-title content-title">Ваша корзина пока пуста</h2>
+        <div class="popover-container">
+          <div class="popover popover-cart-empty">
+            <h2 class="popover-title content-title">Ваша корзина пока пуста</h2>
+          </div>
         </div>
       </li>
     </ul>
@@ -431,7 +441,7 @@
 
     <ul class="footer-menu-list">
       <li class="footer-menu-item">
-        <a href="#" class="footer-menu-link footer-menu-link-current">Для поставщиков</a>
+        <a href="#" class="footer-menu-link">Для поставщиков</a>
       </li>
       <li class="footer-menu-item">
         <a href="#" class="footer-menu-link">Наши документы</a>
