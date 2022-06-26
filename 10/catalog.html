@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси - Каталог</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <base href="https://htmlacademy-htmlcss.github.io/2051093-gllacy-34/10/">
 </head>
 
@@ -16,27 +18,29 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#" class="header-button-text header-button-current">Каталог</a>
-          <ul class="popover-list-submenu popover">
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">
-                <span>Новинки</span>
-              </a>
-            </li>
-            <li class="popover-item-submenu-new">
-            <li class="popover-item-submenu popover-item-submenu-current">
-              <a href="catalog.html" class="submenu-link">Сливочное</a>
-            </li>
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Щербеты</a>
-            </li>
-            <li class="popover-item-submenu">
-              <a href="#" class="submenu-link">Фруктовый лед</a>
-            </li>
-            <li class="popover-item-submenu">
-                <a href="#" class="submenu-link">Мелорин</a>
-            </li>
-          </ul>
+          <div class="popover-container">
+            <a href="#" class="header-button-text header-button-current">Каталог</a>
+            <ul class="popover-list-submenu popover">
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">
+                  <span>Новинки</span>
+                </a>
+              </li>
+              <li class="popover-item-submenu-new">
+              <li class="popover-item-submenu popover-item-submenu-current">
+                <a href="catalog.html" class="submenu-link">Сливочное</a>
+              </li>
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Щербеты</a>
+              </li>
+              <li class="popover-item-submenu">
+                <a href="#" class="submenu-link">Фруктовый лед</a>
+              </li>
+              <li class="popover-item-submenu">
+                  <a href="#" class="submenu-link">Мелорин</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <a href="#" class="header-button-text">Доставка и оплата</a>
@@ -51,61 +55,67 @@
         <a href="#" class="header-button-text header-button-tel">+7 800 555-86-28</a>
       </li>
       <li class="header-button-item">
-        <a href="#" class="header-button header-button-search">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <div class="popover popover-search">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label for="search" class="visually-hidden"></label>
-            <input type="text" class="form-input" id="search" name="search" placeholder="|Поиск по сайту">
-            <button class="search-delete-button delete-button" type="reset"></button>
-          </form>
-        </div>
-      </li>
-      <li class="header-button-item">
-        <a href="#" class="header-button header-button-login">Вход</a>
-        <div class="popover popover-login">
-          <h2 class="content-title">Личный кабинет</h2>
-          <form action="https://echo.htmlacademy.ru/" class="popover-form" method="post">
-            <label for="login-email" class="visually-hidden"></label>
-            <input class="login-form-input form-input" type="text" name="login-email" id="login-email" value="email@example.com">
-            <label for="login-password" class="visually-hidden"></label>
-            <input class="login-form-input form-input" type="password" name="login-password" id="login-password" value="******">
-            <button class="submit-button button login-form-button">Войти</button>
-            <a href="#" class="form-link">Забыли пароль?</a>
-            <a href="#" class="form-link">Регистрация</a>
-          </form>
-        </div>
-      </li>
-      <li class="header-button-item">
-        <a href="#" class="header-button header-button-cart">2 товара</a>
-        <div class="popover popover-cart">
-          <h2 class="content-title">Корзина</h2>
-          <ul class="cart-list">
-            <li class="cart-item">
-              <span class="cart-item-tilte cart-item-bold">Малинка</span>
-              <span class="cart-item-info">1 кг х 310 ₽</span>
-              <span class="cart-item-price cart-item-bold">310 ₽</span>
-              <button class="cart-delete-button delete-button" type="reset">
-                  <span class="visually-hidden">Удалить из корзины</span>
-              </button>
-            </li>
-            <li class="cart-item">
-              <span class="cart-item-tilte cart-item-bold">Бабл-гам</span>
-              <span class="cart-item-info">1,5 кг х 320 ₽</span>
-              <span class="cart-item-price cart-item-bold">480 ₽</span>
-              <button class="cart-delete-button delete-button" type="reset">
-                  <span class="visually-hidden">Удалить из корзины</span>
-              </button>
-            </li>
-          </ul>
-          <div class="cart-container">
-            <button class="cart-button button submit-button">Оформить заказ</button>
-            <p class="cart-item-sum cart-item-bold">Итого: 790 ₽</p>
+        <div class="popover-container">
+          <a href="#" class="header-button header-button-search">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <div class="popover popover-search">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search" class="visually-hidden"></label>
+              <input type="text" class="form-input" id="search" name="search" placeholder="|Поиск по сайту">
+              <button class="search-delete-button delete-button" type="reset"></button>
+            </form>
           </div>
         </div>
-        <div class="popover popover-cart-empty">
-          <h2 class="popover-title content-title">Ваша корзина пока пуста</h2>
+      </li>
+      <li class="header-button-item">
+        <div class="popover-container">
+          <a href="#" class="header-button header-button-login">Вход</a>
+          <div class="popover popover-login">
+            <h2 class="content-title">Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru/" class="popover-form" method="post">
+              <label for="login-email" class="visually-hidden"></label>
+              <input class="login-form-input form-input" type="text" name="login-email" id="login-email" value="email@example.com">
+              <label for="login-password" class="visually-hidden"></label>
+              <input class="login-form-input form-input" type="password" name="login-password" id="login-password" value="******">
+              <button class="submit-button button login-form-button">Войти</button>
+              <a href="#" class="form-link">Забыли пароль?</a>
+              <a href="#" class="form-link">Регистрация</a>
+            </form>
+          </div>
+        </div>
+      </li>
+      <li class="header-button-item">
+        <div class="popover-container">
+          <a href="#" class="header-button header-button-cart">2 товара</a>
+          <div class="popover popover-cart">
+            <h2 class="content-title">Корзина</h2>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <span class="cart-item-tilte cart-item-bold">Малинка</span>
+                <span class="cart-item-info">1 кг х 310 ₽</span>
+                <span class="cart-item-price cart-item-bold">310 ₽</span>
+                <button class="cart-delete-button delete-button" type="reset">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <span class="cart-item-tilte cart-item-bold">Бабл-гам</span>
+                <span class="cart-item-info">1,5 кг х 320 ₽</span>
+                <span class="cart-item-price cart-item-bold">480 ₽</span>
+                <button class="cart-delete-button delete-button" type="reset">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart-container">
+              <button class="cart-button button submit-button">Оформить заказ</button>
+              <p class="cart-item-sum cart-item-bold">Итого: 790 ₽</p>
+            </div>
+          </div>
+          <div class="popover popover-cart-empty">
+            <h2 class="popover-title content-title">Ваша корзина пока пуста</h2>
+          </div>
         </div>
       </li>
     </ul>
@@ -267,7 +277,7 @@
             <img class="product-card-image" src="./images/catalog-items/blueberry.jpg" width="168" height="168" alt="Черничное мороженое">
             <h3 class="product-card-title">Черника</h3>
           </a>
-          <p class="product-card-text">Крем-брюле с черничным джемом</p>
+          <p class="product-card-text">Крем-брюле<br> с черничным джемом</p>
           <div class="product-card-container">
             <span class="product-card-price">330 ₽/кг</span>
             <button class="product-card-button">
@@ -281,7 +291,7 @@
             <img class="product-card-image" src="./images/catalog-items/buble-gum.jpg" width="168" height="168" alt="Мороженое со вкусом Бабл-гам">
             <h3 class="product-card-title">Бабл-гам</h3>
           </a>
-          <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
+          <p class="product-card-text">Ванильный пломбир<br> со сладкой посыпкой</p>
           <div class="product-card-container">
             <span class="product-card-price">320 ₽/кг</span>
             <button class="product-card-button">
@@ -309,7 +319,7 @@
             <img class="product-card-image" src="./images/catalog-items/banana.jpg" width="168" height="168" alt="Банановое мороженое">
             <h3 class="product-card-title">Банан</h3>
           </a>
-          <p class="product-card-text">Сливочный пломбир с банановым вкусом</p>
+          <p class="product-card-text">Сливочный пломбир<br> с банановым вкусом</p>
           <div class="product-card-container">
             <span class="product-card-price">340 ₽/кг</span>
             <button class="product-card-button">
@@ -337,7 +347,7 @@
             <img class="product-card-image" src="./images/catalog-items/strawberry.jpg" width="168" height="168" alt="Клубничное мороженое">
             <h3 class="product-card-title">Клубничка</h3>
           </a>
-          <p class="product-card-text">Сливочный пломбир с клубничным вкусом</p>
+          <p class="product-card-text">Сливочный пломбир<br> с клубничным вкусом</p>
           <div class="product-card-container">
             <span class="product-card-price">300 ₽/кг</span>
             <button class="product-card-button">
@@ -365,7 +375,7 @@
             <img class="product-card-image" src="./images/catalog-items/menthol.jpg" width="168" height="168" alt="Ментоловое мороженое">
             <h3 class="product-card-title">Ментол</h3>
           </a>
-          <p class="product-card-text">Сливочный пломбир с ментоловым сиропом</p>
+          <p class="product-card-text">Сливочный пломбир<br> с ментоловым сиропом</p>
           <div class="product-card-container">
             <span class="product-card-price">320 ₽/кг</span>
             <button class="product-card-button">
@@ -393,7 +403,7 @@
             <img class="product-card-image" src="./images/catalog-items/creme-brulee.jpg" width="168" height="168" alt="Крем-брюле">
             <h3 class="product-card-title">Крем-брюле</h3>
           </a>
-          <p class="product-card-text">Классическое крем-брюле</p>
+          <p class="product-card-text">Классическое<br> крем-брюле</p>
           <div class="product-card-container">
             <span class="product-card-price">280 ₽/кг</span>
             <button class="product-card-button">

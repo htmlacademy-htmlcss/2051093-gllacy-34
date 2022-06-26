@@ -81,7 +81,7 @@ img {
 }
 
 .nav-logo {
-  margin-right: 16px;
+  margin-right: 18px;
 }
 
 .nav-list {
@@ -114,7 +114,6 @@ img {
 }
 
 .header-button-item {
-  position: relative;
   margin-left: 16px;
 }
 
@@ -203,14 +202,19 @@ img {
 
 /* Popovers */
 
+.popover-container {
+  position: relative;
+  padding: 16px 0;
+}
+
 .popover {
   position: absolute;
-  top: 32px;
+  top: 48px;
   right: 0;
   display: none;
   padding: 48px;
   background: #fcfcfc;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   box-sizing: border-box;
   border-radius: 4px;
   z-index: 2;
@@ -321,6 +325,10 @@ img {
   background: #fff;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
+}
+
+.form-input[type="password"] {
+  font-size: 12px;
 }
 
 .form-input::placeholder {
@@ -453,10 +461,7 @@ img {
 
 .header-button-item:focus-within .popover,
 .nav-item:focus-within .popover,
-.header-button-text:hover + .popover,
-.header-button-text:focus + .popover,
-.header-button:hover + .popover,
-.header-button:focus + .popover
+.popover-container:hover .popover,
 .header-button-search-current + .popover,
 .header-button-login-current + .popover,
 .header-button-cart-current +.popover {
@@ -523,7 +528,7 @@ img {
   background: #fcfcfc;
   background-clip: padding-box;
   border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
 }
@@ -531,7 +536,7 @@ img {
 .button:hover {
   background: rgba(252, 252, 252, 0.4);
   border: 4px solid #fcfcfc;
-  box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .button:active {
@@ -734,7 +739,7 @@ img {
 }
 
 .offer-title{
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .offer-container {
@@ -744,6 +749,7 @@ img {
 
 .offer-for-free {
   padding: 36px;
+  padding-bottom: 32px;
   background: #ff7799 no-repeat right bottom;
   border-radius: 16px;
 }
@@ -762,7 +768,7 @@ img {
 
 .offer-text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   width: 328px;
   line-height: 22px;
   margin-right: 170px;
@@ -771,7 +777,7 @@ img {
 /* Popular */
 
 .popular-title {
-  margin-bottom: 105px;
+  margin-bottom: 107px;
 }
 
 .product-list {
@@ -1104,7 +1110,7 @@ img {
   color: #565c66;
   background: #fcfcfc;
   border: 1px solid #b9b9b9;
-  box-shadow: 0px 4px 8px rgba(194, 194, 194, 0.2);
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
   border-radius: 1px;
   z-index: 2;
 }
@@ -1142,6 +1148,7 @@ img {
 .contacts-container {
   max-width: 343px;
   padding: 40px;
+  padding-bottom: 36px;
   background: #fcfcfc;
   border-radius: 8px;
 }
@@ -1168,7 +1175,7 @@ img {
 
 .contacts-sign {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 20px;
   color: #565c66;
@@ -1188,12 +1195,12 @@ img {
   display: flex;
   justify-content: space-between;
   width: 1170px;
-  margin: 40px auto;
+  margin: 44px auto 48px;
 }
 
 .footer-menu-list {
   display: grid;
-  grid-template-columns: auto 190px;
+  grid-template-columns: 130px 190px;
   gap: 6px 24px;
   margin: 0;
   padding: 0;
@@ -1260,7 +1267,7 @@ img {
   margin: auto;
   padding: 64px;
   background-color: #fcfcfc;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
 }
 
@@ -1556,7 +1563,8 @@ img {
 .inner-button {
   align-self: end;
   margin-bottom: 16px;
-  padding: 8px 48px;
+  padding: 9px 52px;
+  font-size: 14px;
   background: rgba(252, 252, 252, 0.3);
   background-clip: padding-box;
   border: 2px solid #fcfcfc;
@@ -1569,7 +1577,7 @@ img {
 }
 
 .inner-button:active {
-  padding: 8px 48px;
+  padding: 9px 52px;
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid rgba(252, 252, 252, 0);
 }
@@ -1600,6 +1608,7 @@ img {
 .pagination-list {
   display: flex;
   margin: 0;
+  margin-right: -8px;
   padding: 0;
   list-style: none;
 }
@@ -1609,9 +1618,9 @@ img {
   width: 24px;
   height: 24px;
   margin: 0 1px;
-  padding: 0 6px;
   color: inherit;
   text-decoration: none;
+  text-align: center;
   border: 1px solid transparent;
   border-radius: 50px;
 }
@@ -1639,7 +1648,6 @@ img {
 }
 
 .pagination-prev {
-  margin-right: 8px;
   background: url('../images/icons/arrow-left.svg') no-repeat center;
   opacity: 0.3;
 }
@@ -1658,11 +1666,9 @@ img {
 
 .pagination-current {
   background: #fcfcfc;
-  background-size: 24px;
 }
 
 .pagination-next {
-  margin-left: 8px;
   background: url('../images/icons/arrow-right.svg') no-repeat center;
 }
 
