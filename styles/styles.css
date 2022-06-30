@@ -70,7 +70,7 @@ img {
 .page-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   width: 1170px;
   margin: 24px auto;
   line-height: 20px;
@@ -83,6 +83,7 @@ img {
 }
 
 .nav-logo {
+  min-width: 137px;
   margin-right: 18px;
 }
 
@@ -97,6 +98,11 @@ img {
 
 .nav-item {
   position: relative;
+  padding: 16px 0;
+}
+
+.nav-item:first-child {
+  padding: 0;
 }
 
 .header-button-text {
@@ -111,7 +117,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 3px 0;
   list-style: none;
 }
 
@@ -181,6 +187,8 @@ img {
 .header-button-cart::before {
   background: url("../images/icons/cart.svg") no-repeat center;
 }
+
+/* for current state in header-menu */
 
 .header-button-current,
 .header-button-search-current,
@@ -351,16 +359,18 @@ img {
 }
 
 .form-input:hover:invalid {
+  padding: 12px 13px;
   border: 2px solid #ea5454;
 }
 
 .form-input:disabled {
+  color: rgba(45, 52, 64, 0.65);
   background: #e7e7e7;
-  opacity: 0.65;
 }
 
 .form-input:disabled:hover {
   background: #e7e7e7;
+  border-color: #b9b9b9;
 }
 
 .login-form-input {
@@ -521,9 +531,10 @@ img {
 
 .button {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 12px 32px;
   font-family: inherit;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   color: #2d3440;
   text-decoration: none;
@@ -696,10 +707,10 @@ img {
   display: block;
   width: 28px;
   height: 28px;
+  background: #feafc3 no-repeat center/cover;
   background-clip: padding-box;
-  background-size: 24px;
   border: 2px solid rgba(252, 252, 252, 0.3);
-  border-radius: 24px;
+  border-radius: 50%;
 }
 
 .social-link:hover {
@@ -811,6 +822,7 @@ img {
   top: -51px;
   left: 51px;
   border-radius: 50%;
+
 }
 
 .product-card-title {
@@ -945,7 +957,7 @@ img {
 
 .news-text {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   line-height: 20px;
   color: #565c66;
 }
@@ -954,7 +966,6 @@ img {
   width: 303px;
   margin: 0;
   margin-right: 203px;
-  line-height: 32px;
 }
 
 .subs {
@@ -1024,6 +1035,7 @@ img {
 .delivery {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   padding: 64px;
   padding-left: 100px;
   background: #fcfcfc url("../images/backgrounds/delivery-bg.jpg") center/cover no-repeat;
@@ -1052,7 +1064,8 @@ img {
 
 .form-text {
   grid-column: 1/-1;
-  margin: 0 40px 8px 0;
+  margin: 0 40px 12px 0;
+  line-height: 22px;
 }
 
 .form-group {
@@ -1149,7 +1162,6 @@ img {
 .contacts-container {
   max-width: 343px;
   padding: 40px;
-  padding-bottom: 36px;
   background: #fcfcfc;
   border-radius: 8px;
 }
@@ -1219,11 +1231,17 @@ img {
   text-decoration: none;
 }
 
+.footer-menu-link-current {
+  position: relative;
+  font-weight: 700;
+}
+
 .footer-menu-link:hover {
   position: relative;
   font-weight: 700;
 }
 
+.footer-menu-link-current::before,
 .footer-menu-link:hover::before {
   position: absolute;
   top: 1px;
@@ -1322,6 +1340,7 @@ img {
   margin-right: 30px;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .breadcrumbs-item::after {
@@ -1554,6 +1573,10 @@ img {
   background: #fcfcfc;
 }
 
+.filler-input:focus-visible + .filler-mark {
+  outline: 1px solid #fcfcfc;
+}
+
 .filler-input:disabled + .filler-mark,
 .filler-input[type="checkbox"]:checked:disabled + .filler-mark,
 .filler-input[type="radio"]:checked:disabled + .filler-mark::before {
@@ -1596,20 +1619,22 @@ img {
 /* Pagination */
 
 .pagination {
+  position: relative;
   display: flex;
   align-items: center;
-  margin: 53px 0;
-  margin-left: 152px;
+  margin: 65px 0;
+  /* margin-left: 152px; */
 }
 
 .pagination-button {
-  margin: 0 auto;
+  position: absolute;
+  left: 41.5%;
 }
 
 .pagination-list {
   display: flex;
-  margin: 0;
-  margin-right: -8px;
+  margin: 0 -8px 0 auto;
+  max-width: 300px;
   padding: 0;
   list-style: none;
 }
@@ -1619,6 +1644,7 @@ img {
   width: 24px;
   height: 24px;
   margin: 0 1px;
+  line-height: 20px;
   color: inherit;
   text-decoration: none;
   text-align: center;
